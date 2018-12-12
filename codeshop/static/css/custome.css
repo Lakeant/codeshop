@@ -1,0 +1,25 @@
+.nav_jsUl{
+	height:100%;
+	box-shadow: 5px 5px 5px 5px #baddea;
+	margin-left: 100px;
+    margin-right: 100px;
+    text-align:center;
+}
+
+.tag{
+	margin:0px -100px;
+	font-size:18px;
+}
+
+.tag_a{
+	box-shadow:3px 5px 2px 2px #baddea;
+	float:left;
+	height:30px;
+	width: 82px;
+	margin: 10px 10px 10px 20px;
+	padding:5px 10px 0px 10px;
+	border-radius: 3px;
+	color:#fff;
+	background-color:#adadad ;
+}
+

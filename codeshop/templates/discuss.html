@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="utf-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <title>交流讨论区</title> 
+  <meta name="keywords" content="交流,推荐,学习技能,学习资源" /> 
+  <link rel="stylesheet" href="/static/css/discuslist.css" type="text/css" /> 
+   {% include "head_include.html" %}
+  <!--[if IE 6]>
+<script src="/static/js/DD_belatedPNG_0.0.8a.min.js"></script>
+<![endif]--> 
+ </head> 
+ <body> 
+  <div class="header"> 
+ {% include "topbar.html" %}
+
+  </div> 
+  <!-- header end --> 
+  <div class="main" id="container" data-init="forum"> 
+   <div class="wrapper fn-clear"> 
+    <div class="left"> 
+     <div class="part"> 
+      <div class="u-caption"> 
+       <div class="status"> 
+        <a href="/discuss/" class="title current">全部</a> 
+        <a href="http://bbs.51talk.com/forum/index/1" class="title ">精华</a> 
+        <a href="http://bbs.51talk.com/forum/index/2" class="title ">推荐</a> 
+        <a href="http://bbs.51talk.com/forum/index/3" class="title ">经验交流</a> 
+        <a href="http://bbs.51talk.com/forum/index/8" class="title ">资源</a> 
+        <div class="more jsMore"> 
+         <a class="title" href="javascript:;">更多</a>
+         <!-- 展开后添加类open --> 
+         <ul class="more-list jsUl" style="display:none;"> 
+          <li><a href="/forum/index/4">影视娱乐</a></li> 
+          <li><a href="/forum/index/5">资料共享</a></li> 
+          <li><a href="/forum/index/6">游戏/活动</a></li> 
+          <li><a href="/forum/index/7">语伴/同城</a></li> 
+          <li><a href="/forum/index/10">八卦闲聊</a></li> 
+          <li><a href="/forum/index/9">吐槽建议</a></li> 
+         </ul> 
+        </div> 
+       </div> 
+       <a href="discuss_add.html" class="attach u-btn blue">发帖</a> 
+      </div> 
+     </div> 
+     <div class="content"> 
+      <div class="discuslist part"> 
+       <!-- det-list end --> 
+       <div class="det-list"> 
+        <div class="avatar-list"> 
+         <!-- <a href="#"> --> 
+         <img src="/static/images/20150521173627556_avatar.jpg" height="60" width="60" /> 
+         <div class="cover"></div> 
+         <!-- </a> --> 
+        </div> 
+        <!-- avatar-list end --> 
+        <div class="u-tit"> 
+         <a href="discuss_detail.html?6917.html" target="_blank" alt="来和产品经理聊聊AC2.0（版本最后更新时间：2015-12-14 10:00:00 ）">来和产品经理聊聊AC2.0（版本最后更新时间：2015-12-14 10:00:00 ）</a> 
+         <i class="top">顶</i>
+         <i class="hot">热</i> 
+        </div> 
+        <!-- u-tit end --> 
+        <div class="u-msg"> 
+         <span class="s-fc2">Hania</span> &nbsp;&nbsp;2015-12-11 09:49 发表于&nbsp;&nbsp;[ 
+         <a href="http://bbs.51talk.com/forum/index/3" class="group-tit">经验交流</a> ] 
+         <span class="meta"> <i class="icon-meta icon-view"></i>&nbsp;732&nbsp;&nbsp;<i class="icon-meta icon-comment"></i>&nbsp;26<b class="pra-tit" data-forum_id="6917"><i class="pra-meta icon-pra "></i><em class="pra-em">8</em></b> </span> 
+        </div> 
+        <!-- u-msg end --> 
+       </div> 
+       <!-- det-list end --> 
+       <div class="det-list"> 
+        <div class="avatar-list"> 
+         <!-- <a href="#"> --> 
+         <img src="/static/images/20150828141727762_avatar.jpg" height="60" width="60" /> 
+         <div class="cover"></div> 
+         <!-- </a> --> 
+        </div> 
+        <!-- avatar-list end --> 
+        <div class="u-tit"> 
+         <a href="discuss_detail.html?6910.html" target="_blank" alt="【高颜值奖品哦】“学英语，集齐运动装备”   第二波  登陆~">【高颜值奖品哦】“学英语，集齐运动装备” 第二波 登陆~</a> 
+         <i class="top">顶</i>
+         <i class="recommend">荐</i> 
+        </div> 
+        <!-- u-tit end --> 
+        <div class="u-msg"> 
+         <i class="s-fc4 f-fwb">Admin&nbsp;-&nbsp;</i>
+         <span class="s-fc4">Clark</span> &nbsp;&nbsp;2015-12-10 16:02 发表于&nbsp;&nbsp;[ 
+         <a href="http://bbs.51talk.com/forum/index/6" class="group-tit">游戏/活动</a> ] 
+         <span class="meta"> <i class="icon-meta icon-view"></i>&nbsp;499&nbsp;&nbsp;<i class="icon-meta icon-comment"></i>&nbsp;18<b class="pra-tit" data-forum_id="6910"><i class="pra-meta icon-pra "></i><em class="pra-em">12</em></b> </span> 
+        </div> 
+        <!-- u-msg end --> 
+       </div> 
+       <!-- det-list end --> 
+       <div class="det-list"> 
+        <div class="avatar-list"> 
+         <!-- <a href="#"> --> 
+         <img src="/static/images/20150613144120639_avatar.jpg" height="60" width="60" /> 
+         <div class="cover"></div> 
+         <!-- </a> --> 
+        </div> 
+        <!-- avatar-list end --> 
+        <div class="u-tit"> 
+         <a href="discuss_detail.html?2826.html" target="_blank" alt="51Talk官方QQ群（更新）">51Talk官方QQ群（更新）</a> 
+         <i class="top">顶</i>
+         <i class="course">精</i> 
+        </div> 
+        <!-- u-tit end --> 
+        <div class="u-msg"> 
+         <i class="s-fc4 f-fwb">Admin&nbsp;-&nbsp;</i>
+         <span class="s-fc4">nico</span> &nbsp;&nbsp;2015-05-18 15:12 发表于&nbsp;&nbsp;[ 
+         <a href="http://bbs.51talk.com/forum/index/3" class="group-tit">经验交流</a> ] 
+         <span class="meta"> <i class="icon-meta icon-view"></i>&nbsp;14011&nbsp;&nbsp;<i class="icon-meta icon-comment"></i>&nbsp;86<b class="pra-tit" data-forum_id="2826"><i class="pra-meta icon-pra "></i><em class="pra-em">3</em></b> </span> 
+        </div> 
+        <!-- u-msg end --> 
+       </div> 
+       <!-- det-list end --> 
+       <div class="det-list"> 
+        <div class="avatar-list"> 
+         <!-- <a href="#"> --> 
+         <img src="/static/images/20150613144120639_avatar.jpg" height="60" width="60" /> 
+         <div class="cover"></div> 
+         <!-- </a> --> 
+        </div> 
+        <!-- avatar-list end --> 
+        <div class="u-tit"> 
+         <a href="discuss_detail.html?6859.html" target="_blank" alt="【招募】第四届版主团(FMT4)招募啦~~">【招募】第四届版主团(FMT4)招募啦~~</a> 
+         <i class="top">顶</i> 
+        </div> 
+        <!-- u-tit end --> 
+        <div class="u-msg"> 
+         <i class="s-fc4 f-fwb">Admin&nbsp;-&nbsp;</i>
+         <span class="s-fc4">nico</span> &nbsp;&nbsp;2015-12-07 11:45 发表于&nbsp;&nbsp;[ 
+         <a href="http://bbs.51talk.com/forum/index/6" class="group-tit">游戏/活动</a> ] 
+         <span class="meta"> <i class="icon-meta icon-view"></i>&nbsp;743&nbsp;&nbsp;<i class="icon-meta icon-comment"></i>&nbsp;20<b class="pra-tit" data-forum_id="6859"><i class="pra-meta icon-pra "></i><em class="pra-em">21</em></b> </span> 
+        </div> 
+        <!-- u-msg end --> 
+       </div> 
+       <!-- det-list end --> 
+       <div class="det-list"> 
+        <div class="avatar-list"> 
+         <!-- <a href="#"> --> 
+         <img src="/static/images/20150727142450233_avatar.png" height="60" width="60" /> 
+         <div class="cover"></div> 
+         <!-- </a> --> 
+        </div> 
+        <!-- avatar-list end --> 
+        <div class="u-tit"> 
+         <a href="discuss_detail.html?6913.html" target="_blank" alt="【重磅】老师推荐第18波：阳光型男专场">【重磅】老师推荐第18波：阳光型男专场</a> 
+         <i class="top">顶</i>
+         <i class="course">精</i> 
+        </div> 
+        <!-- u-tit end --> 
+        <div class="u-msg"> 
+         <i class="s-fc4 f-fwb">Admin&nbsp;-&nbsp;</i>
+         <span class="s-fc4">Luna</span> &nbsp;&nbsp;2015-12-10 20:11 发表于&nbsp;&nbsp;[ 
+         <a href="http://bbs.51talk.com/forum/index/3" class="group-tit">经验交流</a> ] 
+         <span class="meta"> <i class="icon-meta icon-view"></i>&nbsp;1058&nbsp;&nbsp;<i class="icon-meta icon-comment"></i>&nbsp;12<b class="pra-tit" data-forum_id="6913"><i class="pra-meta icon-pra "></i><em class="pra-em">7</em></b> </span> 
+        </div> 
+        <!-- u-msg end --> 
+       </div> 
+       <!-- det-list end --> 
+       <div class="det-list"> 
+        <div class="avatar-list"> 
+         <!-- <a href="#"> --> 
+         <img src="/static/images/20150613144120639_avatar.jpg" height="60" width="60" /> 
+         <div class="cover"></div> 
+         <!-- </a> --> 
+        </div> 
+        <!-- avatar-list end --> 
+        <div class="u-tit"> 
+         <a href="discuss_detail.html?6714.html" target="_blank" alt="奖【51Talk四周年感恩季】小5我想对你说（另有51内部照片/视频爆料）">奖【51Talk四周年感恩季】小5我想对你说（另有51内部照片/视频爆料）</a> 
+         <i class="top">顶</i>
+         <i class="recommend">荐</i> 
+        </div> 
+        <!-- u-tit end --> 
+        <div class="u-msg"> 
+         <i class="s-fc4 f-fwb">Admin&nbsp;-&nbsp;</i>
+         <span class="s-fc4">nico</span> &nbsp;&nbsp;2015-11-26 12:03 发表于&nbsp;&nbsp;[ 
+         <a href="http://bbs.51talk.com/forum/index/6" class="group-tit">游戏/活动</a> ] 
+         <span class="meta"> <i class="icon-meta icon-view"></i>&nbsp;5167&nbsp;&nbsp;<i class="icon-meta icon-comment"></i>&nbsp;151<b class="pra-tit" data-forum_id="6714"><i class="pra-meta icon-pra "></i><em class="pra-em">23</em></b> </span> 
+        </div> 
+        <!-- u-msg end --> 
+       </div> 
+       <!-- det-list end --> 
+       <div class="det-list"> 
+        <div class="avatar-list"> 
+         <!-- <a href="#"> --> 
+         <img src="/static/images/20151121165845846_avatar.jpg" height="60" width="60" /> 
+         <div class="cover"></div> 
+         <!-- </a> --> 
+        </div> 
+        <!-- avatar-list end --> 
+        <div class="u-tit"> 
+         <a href="discuss_detail.html?6618.html" target="_blank" alt="【资源】有人要青少年牛津阅读树绘本的吗 留邮箱吧">【资源】有人要青少年牛津阅读树绘本的吗 留邮箱吧</a> 
+        </div> 
+        <!-- u-tit end --> 
+        <div class="u-msg"> 
+         <span class="s-fc2">andy</span> &nbsp;&nbsp;2015-11-21 16:40 发表于&nbsp;&nbsp;[ 
+         <a href="http://bbs.51talk.com/forum/index/5" class="group-tit">资料共享</a> ] 
+         <span class="meta"> <i class="icon-meta icon-view"></i>&nbsp;388&nbsp;&nbsp;<i class="icon-meta icon-comment"></i>&nbsp;95<b class="pra-tit" data-forum_id="6618"><i class="pra-meta icon-pra "></i><em class="pra-em">10</em></b> </span> 
+        </div> 
+        <!-- u-msg end --> 
+       </div> 
+       <!-- det-list end --> 
+       <div class="det-list"> 
+        <div class="avatar-list"> 
+         <!-- <a href="#"> --> 
+         <img src="/static/images/avatar.png" height="60" width="60" /> 
+         <div class="cover"></div> 
+         <!-- </a> --> 
+        </div> 
+        <!-- avatar-list end --> 
+        <div class="u-tit"> 
+         <a href="discuss_detail.html?7006.html" target="_blank" alt="收费多少个地方火锅店">收费多少个地方火锅店</a> 
+        </div> 
+        <!-- u-tit end --> 
+        <div class="u-msg"> 
+         <span class="s-fc2">student</span> &nbsp;&nbsp;2015-12-14 23:16 发表于&nbsp;&nbsp;[ 
+         <a href="http://bbs.51talk.com/forum/index/2" class="group-tit">公开课</a> ] 
+         <span class="meta"> <i class="icon-meta icon-view"></i>&nbsp;1&nbsp;&nbsp;<i class="icon-meta icon-comment"></i>&nbsp;0<b class="pra-tit" data-forum_id="7006"><i class="pra-meta icon-pra "></i><em class="pra-em">0</em></b> </span> 
+        </div> 
+        <!-- u-msg end --> 
+       </div> 
+       <!-- det-list end --> 
+       <div class="det-list"> 
+        <div class="avatar-list"> 
+         <!-- <a href="#"> --> 
+         <img src="/static/images/20150830182500165_avatar.jpg" height="60" width="60" /> 
+         <div class="cover"></div> 
+         <!-- </a> --> 
+        </div> 
+        <!-- avatar-list end --> 
+        <div class="u-tit"> 
+         <a href="discuss_detail.html?4732.html" target="_blank" alt="【老师推荐】还有教材【MP3】、约课神器、PDF教材(4-9)赠送">【老师推荐】还有教材【MP3】、约课神器、PDF教材(4-9)赠送</a> 
+         <i class="hot">热</i> 
+        </div> 
+        <!-- u-tit end --> 
+        <div class="u-msg"> 
+         <span class="s-fc2">Jerry</span> &nbsp;&nbsp;2015-08-31 10:27 发表于&nbsp;&nbsp;[ 
+         <a href="http://bbs.51talk.com/forum/index/3" class="group-tit">经验交流</a> ] 
+         <span class="meta"> <i class="icon-meta icon-view"></i>&nbsp;4734&nbsp;&nbsp;<i class="icon-meta icon-comment"></i>&nbsp;381<b class="pra-tit" data-forum_id="4732"><i class="pra-meta icon-pra "></i><em class="pra-em">3</em></b> </span> 
+        </div> 
+        <!-- u-msg end --> 
+       </div> 
+       <!-- det-list end --> 
+       <div class="det-list"> 
+        <div class="avatar-list"> 
+         <!-- <a href="#"> --> 
+         <img src="/static/images/20151208103134762_avatar.jpg" height="60" width="60" /> 
+         <div class="cover"></div> 
+         <!-- </a> --> 
+        </div> 
+        <!-- avatar-list end --> 
+        <div class="u-tit"> 
+         <a href="discuss_detail.html?7005.html" target="_blank" alt="【歌曲分享】Boom Clap-Charli XCX  非常炫酷的舞蹈！！！">【歌曲分享】Boom Clap-Charli XCX 非常炫酷的舞蹈！！！</a> 
+        </div> 
+        <!-- u-tit end --> 
+        <div class="u-msg"> 
+         <span class="s-fc2">Aquamarine</span> &nbsp;&nbsp;2015-12-14 21:52 发表于&nbsp;&nbsp;[ 
+         <a href="http://bbs.51talk.com/forum/index/4" class="group-tit">影视娱乐</a> ] 
+         <span class="meta"> <i class="icon-meta icon-view"></i>&nbsp;10&nbsp;&nbsp;<i class="icon-meta icon-comment"></i>&nbsp;0<b class="pra-tit" data-forum_id="7005"><i class="pra-meta icon-pra "></i><em class="pra-em">0</em></b> </span> 
+        </div> 
+        <!-- u-msg end --> 
+       </div> 
+       <!-- det-list end --> 
+       <div class="det-list"> 
+        <div class="avatar-list"> 
+         <!-- <a href="#"> --> 
+         <img src="/static/images/20150828141727762_avatar.jpg" height="60" width="60" /> 
+         <div class="cover"></div> 
+         <!-- </a> --> 
+        </div> 
+        <!-- avatar-list end --> 
+        <div class="u-tit"> 
+         <a href="discuss_detail.html?6815.html" target="_blank" alt="【“学英语，集齐运动装备” 】 第一波 来袭">【“学英语，集齐运动装备” 】 第一波 来袭</a> 
+        </div> 
+        <!-- u-tit end --> 
+        <div class="u-msg"> 
+         <i class="s-fc4 f-fwb">Admin&nbsp;-&nbsp;</i>
+         <span class="s-fc4">Clark</span> &nbsp;&nbsp;2015-12-03 17:41 发表于&nbsp;&nbsp;[ 
+         <a href="http://bbs.51talk.com/forum/index/6" class="group-tit">游戏/活动</a> ] 
+         <span class="meta"> <i class="icon-meta icon-view"></i>&nbsp;966&nbsp;&nbsp;<i class="icon-meta icon-comment"></i>&nbsp;19<b class="pra-tit" data-forum_id="6815"><i class="pra-meta icon-pra "></i><em class="pra-em">15</em></b> </span> 
+        </div> 
+        <!-- u-msg end --> 
+       </div> 
+       <!-- det-list end --> 
+       <div class="det-list"> 
+        <div class="avatar-list"> 
+         <!-- <a href="#"> --> 
+         <img src="/static/images/20141125222502415_avatar.jpg" height="60" width="60" /> 
+         <div class="cover"></div> 
+         <!-- </a> --> 
+        </div> 
+        <!-- avatar-list end --> 
+        <div class="u-tit"> 
+         <a href="discuss_detail.html?1866.html" target="_blank" alt="51talk越做越差 完全失望">51talk越做越差 完全失望</a> 
+        </div> 
+        <!-- u-tit end --> 
+        <div class="u-msg"> 
+         <span class="s-fc2">Steven</span> &nbsp;&nbsp;2015-01-17 11:05 发表于&nbsp;&nbsp;[ 
+         <a href="http://bbs.51talk.com/forum/index/9" class="group-tit">吐槽建议</a> ] 
+         <span class="meta"> <i class="icon-meta icon-view"></i>&nbsp;2190&nbsp;&nbsp;<i class="icon-meta icon-comment"></i>&nbsp;104<b class="pra-tit" data-forum_id="1866"><i class="pra-meta icon-pra "></i><em class="pra-em">0</em></b> </span> 
+        </div> 
+        <!-- u-msg end --> 
+       </div> 
+       <!-- det-list end --> 
+       <div class="det-list"> 
+        <div class="avatar-list"> 
+         <!-- <a href="#"> --> 
+         <img src="/static/images/20150613144120639_avatar.jpg" height="60" width="60" /> 
+         <div class="cover"></div> 
+         <!-- </a> --> 
+        </div> 
+        <!-- avatar-list end --> 
+        <div class="u-tit"> 
+         <a href="discuss_detail.html?6992.html" target="_blank" alt="晒爸妈，赢豪华双人日韩游！">晒爸妈，赢豪华双人日韩游！</a> 
+         <i class="hot">热</i> 
+        </div> 
+        <!-- u-tit end --> 
+        <div class="u-msg"> 
+         <i class="s-fc4 f-fwb">Admin&nbsp;-&nbsp;</i>
+         <span class="s-fc4">nico</span> &nbsp;&nbsp;2015-12-14 15:56 发表于&nbsp;&nbsp;[ 
+         <a href="http://bbs.51talk.com/forum/index/6" class="group-tit">游戏/活动</a> ] 
+         <span class="meta"> <i class="icon-meta icon-view"></i>&nbsp;78&nbsp;&nbsp;<i class="icon-meta icon-comment"></i>&nbsp;1<b class="pra-tit" data-forum_id="6992"><i class="pra-meta icon-pra "></i><em class="pra-em">4</em></b> </span> 
+        </div> 
+        <!-- u-msg end --> 
+       </div> 
+       <!-- det-list end --> 
+       <div class="det-list"> 
+        <div class="avatar-list"> 
+         <!-- <a href="#"> --> 
+         <img src="/static/images/20151207133146667_avatar.jpg" height="60" width="60" /> 
+         <div class="cover"></div> 
+         <!-- </a> --> 
+        </div> 
+        <!-- avatar-list end --> 
+        <div class="u-tit"> 
+         <a href="discuss_detail.html?6941.html" target="_blank" alt="要过生日啦！好开心！">要过生日啦！好开心！</a> 
+        </div> 
+        <!-- u-tit end --> 
+        <div class="u-msg"> 
+         <span class="s-fc2">Cecilia</span> &nbsp;&nbsp;2015-12-11 19:40 发表于&nbsp;&nbsp;[ 
+         <a href="http://bbs.51talk.com/forum/index/10" class="group-tit">八卦闲聊</a> ] 
+         <span class="meta"> <i class="icon-meta icon-view"></i>&nbsp;39&nbsp;&nbsp;<i class="icon-meta icon-comment"></i>&nbsp;9<b class="pra-tit" data-forum_id="6941"><i class="pra-meta icon-pra "></i><em class="pra-em">1</em></b> </span> 
+        </div> 
+        <!-- u-msg end --> 
+       </div> 
+       <!-- det-list end --> 
+       <div class="det-list"> 
+        <div class="avatar-list"> 
+         <!-- <a href="#"> --> 
+         <img src="/static/images/20150613144120639_avatar.jpg" height="60" width="60" /> 
+         <div class="cover"></div> 
+         <!-- </a> --> 
+        </div> 
+        <!-- avatar-list end --> 
+        <div class="u-tit"> 
+         <a href="discuss_detail.html?7004.html" target="_blank" alt="十二月第三周公开课课表">十二月第三周公开课课表</a> 
+        </div> 
+        <!-- u-tit end --> 
+        <div class="u-msg"> 
+         <i class="s-fc4 f-fwb">Admin&nbsp;-&nbsp;</i>
+         <span class="s-fc4">nico</span> &nbsp;&nbsp;2015-12-14 20:36 发表于&nbsp;&nbsp;[ 
+         <a href="http://bbs.51talk.com/forum/index/2" class="group-tit">公开课</a> ] 
+         <span class="meta"> <i class="icon-meta icon-view"></i>&nbsp;12&nbsp;&nbsp;<i class="icon-meta icon-comment"></i>&nbsp;0<b class="pra-tit" data-forum_id="7004"><i class="pra-meta icon-pra "></i><em class="pra-em">0</em></b> </span> 
+        </div> 
+        <!-- u-msg end --> 
+       </div> 
+       <!-- det-list end --> 
+       <div class="det-list"> 
+        <div class="avatar-list"> 
+         <!-- <a href="#"> --> 
+         <img src="/static/images/avatar.png" height="60" width="60" /> 
+         <div class="cover"></div> 
+         <!-- </a> --> 
+        </div> 
+        <!-- avatar-list end --> 
+        <div class="u-tit"> 
+         <a href="discuss_detail.html?6945.html" target="_blank" alt="自己写的一篇文章，美不美？最美不过初相逢">自己写的一篇文章，美不美？最美不过初相逢</a> 
+        </div> 
+        <!-- u-tit end --> 
+        <div class="u-msg"> 
+         <span class="s-fc2">Alina</span> &nbsp;&nbsp;2015-12-12 09:52 发表于&nbsp;&nbsp;[ 
+         <a href="http://bbs.51talk.com/forum/index/2" class="group-tit">公开课</a> ] 
+         <span class="meta"> <i class="icon-meta icon-view"></i>&nbsp;27&nbsp;&nbsp;<i class="icon-meta icon-comment"></i>&nbsp;1<b class="pra-tit" data-forum_id="6945"><i class="pra-meta icon-pra "></i><em class="pra-em">5</em></b> </span> 
+        </div> 
+        <!-- u-msg end --> 
+       </div> 
+       <!-- det-list end --> 
+       <div class="det-list"> 
+        <div class="avatar-list"> 
+         <!-- <a href="#"> --> 
+         <img src="/static/images/20150613144120639_avatar.jpg" height="60" width="60" /> 
+         <div class="cover"></div> 
+         <!-- </a> --> 
+        </div> 
+        <!-- avatar-list end --> 
+        <div class="u-tit"> 
+         <a href="discuss_detail.html?6554.html" target="_blank" alt="公布【有奖游戏】一句英语形容自己！Can you？">公布【有奖游戏】一句英语形容自己！Can you？</a> 
+         <i class="recommend">荐</i> 
+        </div> 
+        <!-- u-tit end --> 
+        <div class="u-msg"> 
+         <i class="s-fc4 f-fwb">Admin&nbsp;-&nbsp;</i>
+         <span class="s-fc4">nico</span> &nbsp;&nbsp;2015-11-18 11:23 发表于&nbsp;&nbsp;[ 
+         <a href="http://bbs.51talk.com/forum/index/6" class="group-tit">游戏/活动</a> ] 
+         <span class="meta"> <i class="icon-meta icon-view"></i>&nbsp;9144&nbsp;&nbsp;<i class="icon-meta icon-comment"></i>&nbsp;298<b class="pra-tit" data-forum_id="6554"><i class="pra-meta icon-pra "></i><em class="pra-em">27</em></b> </span> 
+        </div> 
+        <!-- u-msg end --> 
+       </div> 
+       <!-- det-list end --> 
+       <div class="det-list"> 
+        <div class="avatar-list"> 
+         <!-- <a href="#"> --> 
+         <img src="/static/images/20151208103134762_avatar.jpg" height="60" width="60" /> 
+         <div class="cover"></div> 
+         <!-- </a> --> 
+        </div> 
+        <!-- avatar-list end --> 
+        <div class="u-tit"> 
+         <a href="discuss_detail.html?6961.html" target="_blank" alt="【歌曲分享】Try-Colbie Caillat   女孩，你不必试着去迎合别人！">【歌曲分享】Try-Colbie Caillat 女孩，你不必试着去迎合别人！</a> 
+        </div> 
+        <!-- u-tit end --> 
+        <div class="u-msg"> 
+         <span class="s-fc2">Aquamarine</span> &nbsp;&nbsp;2015-12-12 18:01 发表于&nbsp;&nbsp;[ 
+         <a href="http://bbs.51talk.com/forum/index/4" class="group-tit">影视娱乐</a> ] 
+         <span class="meta"> <i class="icon-meta icon-view"></i>&nbsp;44&nbsp;&nbsp;<i class="icon-meta icon-comment"></i>&nbsp;0<b class="pra-tit" data-forum_id="6961"><i class="pra-meta icon-pra "></i><em class="pra-em">0</em></b> </span> 
+        </div> 
+        <!-- u-msg end --> 
+       </div> 
+       <!-- det-list end --> 
+       <div class="det-list"> 
+        <div class="avatar-list"> 
+         <!-- <a href="#"> --> 
+         <img src="/static/images/avatar.png" height="60" width="60" /> 
+         <div class="cover"></div> 
+         <!-- </a> --> 
+        </div> 
+        <!-- avatar-list end --> 
+        <div class="u-tit"> 
+         <a href="discuss_detail.html?6978.html" target="_blank" alt="英语1-6年级单词系统分类，记得分享到朋友圈，供孩子学习哦（一）">英语1-6年级单词系统分类，记得分享到朋友圈，供孩子学习哦（一）</a> 
+        </div> 
+        <!-- u-tit end --> 
+        <div class="u-msg"> 
+         <span class="s-fc2">liangzi</span> &nbsp;&nbsp;2015-12-14 12:34 发表于&nbsp;&nbsp;[ 
+         <a href="http://bbs.51talk.com/forum/index/8" class="group-tit">青少/家长</a> ] 
+         <span class="meta"> <i class="icon-meta icon-view"></i>&nbsp;38&nbsp;&nbsp;<i class="icon-meta icon-comment"></i>&nbsp;0<b class="pra-tit" data-forum_id="6978"><i class="pra-meta icon-pra "></i><em class="pra-em">0</em></b> </span> 
+        </div> 
+        <!-- u-msg end --> 
+       </div> 
+       <!-- det-list end --> 
+       <div class="det-list"> 
+        <div class="avatar-list"> 
+         <!-- <a href="#"> --> 
+         <img src="/static/images/20150501153529545_avatar.png" height="60" width="60" /> 
+         <div class="cover"></div> 
+         <!-- </a> --> 
+        </div> 
+        <!-- avatar-list end --> 
+        <div class="u-tit"> 
+         <a href="discuss_detail.html?2809.html" target="_blank" alt="Eve+51学习经验谈——有更新，新手必看，把学费赚回来">Eve+51学习经验谈——有更新，新手必看，把学费赚回来</a> 
+         <i class="course">精</i> 
+        </div> 
+        <!-- u-tit end --> 
+        <div class="u-msg"> 
+         <span class="s-fc2">Eve</span> &nbsp;&nbsp;2015-05-16 18:05 发表于&nbsp;&nbsp;[ 
+         <a href="http://bbs.51talk.com/forum/index/3" class="group-tit">经验交流</a> ] 
+         <span class="meta"> <i class="icon-meta icon-view"></i>&nbsp;5981&nbsp;&nbsp;<i class="icon-meta icon-comment"></i>&nbsp;88<b class="pra-tit" data-forum_id="2809"><i class="pra-meta icon-pra "></i><em class="pra-em">15</em></b> </span> 
+        </div> 
+        <!-- u-msg end --> 
+       </div> 
+       <!-- det-list end --> 
+       <div class="det-list"> 
+        <div class="avatar-list"> 
+         <!-- <a href="#"> --> 
+         <img src="/static/images/20151209183309465_avatar.jpg" height="60" width="60" /> 
+         <div class="cover"></div> 
+         <!-- </a> --> 
+        </div> 
+        <!-- avatar-list end --> 
+        <div class="u-tit"> 
+         <a href="discuss_detail.html?6863.html" target="_blank" alt="公开课《摩登家庭》太实用了！！追课直播中！（更新至第二课）">公开课《摩登家庭》太实用了！！追课直播中！（更新至第二课）</a> 
+        </div> 
+        <!-- u-tit end --> 
+        <div class="u-msg"> 
+         <span class="s-fc2">Adam</span> &nbsp;&nbsp;2015-12-07 17:53 发表于&nbsp;&nbsp;[ 
+         <a href="http://bbs.51talk.com/forum/index/2" class="group-tit">公开课</a> ] 
+         <span class="meta"> <i class="icon-meta icon-view"></i>&nbsp;275&nbsp;&nbsp;<i class="icon-meta icon-comment"></i>&nbsp;17<b class="pra-tit" data-forum_id="6863"><i class="pra-meta icon-pra "></i><em class="pra-em">9</em></b> </span> 
+        </div> 
+        <!-- u-msg end --> 
+       </div> 
+       <!-- det-list end --> 
+       <div class="det-list"> 
+        <div class="avatar-list"> 
+         <!-- <a href="#"> --> 
+         <img src="/static/images/20151111111856771_avatar.jpg" height="60" width="60" /> 
+         <div class="cover"></div> 
+         <!-- </a> --> 
+        </div> 
+        <!-- avatar-list end --> 
+        <div class="u-tit"> 
+         <a href="discuss_detail.html?7001.html" target="_blank" alt="【转+个人经验】一个多邻国用户：我用一年碎片时间学会一门外语">【转+个人经验】一个多邻国用户：我用一年碎片时间学会一门外语</a> 
+        </div> 
+        <!-- u-tit end --> 
+        <div class="u-msg"> 
+         <span class="s-fc2">Annatar</span> &nbsp;&nbsp;2015-12-14 17:29 发表于&nbsp;&nbsp;[ 
+         <a href="http://bbs.51talk.com/forum/index/3" class="group-tit">经验交流</a> ] 
+         <span class="meta"> <i class="icon-meta icon-view"></i>&nbsp;22&nbsp;&nbsp;<i class="icon-meta icon-comment"></i>&nbsp;0<b class="pra-tit" data-forum_id="7001"><i class="pra-meta icon-pra "></i><em class="pra-em">1</em></b> </span> 
+        </div> 
+        <!-- u-msg end --> 
+       </div> 
+       <!-- det-list end --> 
+       <div class="det-list"> 
+        <div class="avatar-list"> 
+         <!-- <a href="#"> --> 
+         <img src="/static/images/20151111111856771_avatar.jpg" height="60" width="60" /> 
+         <div class="cover"></div> 
+         <!-- </a> --> 
+        </div> 
+        <!-- avatar-list end --> 
+        <div class="u-tit"> 
+         <a href="discuss_detail.html?6477.html" target="_blank" alt="Annatar个人整合贴 V0.0.3">Annatar个人整合贴 V0.0.3</a> 
+        </div> 
+        <!-- u-tit end --> 
+        <div class="u-msg"> 
+         <span class="s-fc2">Annatar</span> &nbsp;&nbsp;2015-11-11 18:13 发表于&nbsp;&nbsp;[ 
+         <a href="http://bbs.51talk.com/forum/index/10" class="group-tit">八卦闲聊</a> ] 
+         <span class="meta"> <i class="icon-meta icon-view"></i>&nbsp;135&nbsp;&nbsp;<i class="icon-meta icon-comment"></i>&nbsp;8<b class="pra-tit" data-forum_id="6477"><i class="pra-meta icon-pra "></i><em class="pra-em">1</em></b> </span> 
+        </div> 
+        <!-- u-msg end --> 
+       </div> 
+       <!-- det-list end --> 
+       <div class="det-list"> 
+        <div class="avatar-list"> 
+         <!-- <a href="#"> --> 
+         <img src="/static/images/20150727142450233_avatar.png" height="60" width="60" /> 
+         <div class="cover"></div> 
+         <!-- </a> --> 
+        </div> 
+        <!-- avatar-list end --> 
+        <div class="u-tit"> 
+         <a href="discuss_detail.html?6821.html" target="_blank" alt="【重磅】老师推荐第17波：拓展丰富老师专场">【重磅】老师推荐第17波：拓展丰富老师专场</a> 
+         <i class="course">精</i> 
+        </div> 
+        <!-- u-tit end --> 
+        <div class="u-msg"> 
+         <i class="s-fc4 f-fwb">Admin&nbsp;-&nbsp;</i>
+         <span class="s-fc4">Luna</span> &nbsp;&nbsp;2015-12-03 19:53 发表于&nbsp;&nbsp;[ 
+         <a href="http://bbs.51talk.com/forum/index/3" class="group-tit">经验交流</a> ] 
+         <span class="meta"> <i class="icon-meta icon-view"></i>&nbsp;1532&nbsp;&nbsp;<i class="icon-meta icon-comment"></i>&nbsp;51<b class="pra-tit" data-forum_id="6821"><i class="pra-meta icon-pra "></i><em class="pra-em">46</em></b> </span> 
+        </div> 
+        <!-- u-msg end --> 
+       </div> 
+       <!-- det-list end --> 
+      </div> 
+     </div> 
+     <!-- partylist end --> 
+     <div class="u-link"> 
+      <div class="inner"> 
+       <a class="cur" href="javascript:;">1</a>
+       <a href="/forum/index/0?page=2">2</a>
+       <a href="/forum/index/0?page=3">3</a>
+       <a href="/forum/index/0?page=4">4</a>
+       <a href="/forum/index/0?page=5">5</a>
+       <span>...</span>
+       <a href="/forum/index/0?page=10">10</a>
+       <a href="/forum/index/0?page=2" class="a2">下一页 </a>
+       <a href="/forum/index/0?page=160" class="a2">末页 </a> 
+      </div> 
+     </div> 
+     <!-- u-link end --> 
+    </div> 
+    <!-- left end --> 
+    <div class="sidebar"> 
+     <!-- 热门讨论 --> 
+     <div class="us-box pb0"> 
+      <div class="u-caption"> 
+       <h4 class="title">热门讨论</h4> 
+      </div> 
+      <div class="us-pic"> 
+       <a href="http://bbs.51talk.com/user/ad_click?id=8&amp;url=http%3A%2F%2Fbbs.51talk.com%2Fforum%2Fdetail%2F6859.html" target="_blank"> <img title="讨论区版主招募啦" src="/static/images/144946596120065_thumb.jpg" width="200" height="138" style="border:0px;" /> </a> 
+       <!--a href="http://bbs.51talk.com/forum/index"><img src="http://static.51talk.com/static/image/openclass/banner_side_1.png" width="200" height="138" alt=""></a--> 
+      </div> 
+      <div class="us-txt"> 
+       <ul class="us-list"> 
+        <li><a href="discuss_detail.html?6200" target="_blank">【51Talk青少演讲大赛】XD05-Nancy</a></li> 
+        <li><a href="discuss_detail.html?5534" target="_blank">名单公布【小5送礼啦】开心迎国庆 抢楼乐翻天</a></li> 
+        <li><a href="discuss_detail.html?6311" target="_blank">[51talk青少年演讲大赛] XD-10 Cindy，我荣获冠军了</a></li> 
+        <li><a href="discuss_detail.html?6312" target="_blank">【51Talk青少演讲大赛】XG10-10岁Christina (恭喜Christina）</a></li> 
+        <li><a href="discuss_detail.html?6153" target="_blank">James Lee和小伙伴们聊英语~【继续更新】</a></li> 
+       </ul> 
+      </div> 
+     </div> 
+     <!-- 活动推荐 --> 
+     <div class="us-box pb0"> 
+      <div class="u-caption"> 
+       <h4 class="title">活动推荐</h4> 
+      </div> 
+      <div class="us-pic"> 
+       <a href="http://bbs.51talk.com/user/ad_click?id=3&amp;url=http%3A%2F%2Fbbs.51talk.com%2Fforum%2Fdetail%2F6714.html" target="_blank"> <img title="51Talk四周年感恩季" src="/static/images/144852011651411_thumb.jpg" width="200" height="138" style="border:0px;" /> </a> 
+       <!--a href="discuss_detail.html?2747" target="_blank"><img src="http://static.51talk.com/static/image/openclass/activity_2747.jpg" width="200" height="138" alt="51奖品任性送"></a--> 
+      </div> 
+      <div class="us-txt fn-tac"> 
+       <a href="http://bbs.51talk.com/user/ad_click?id=10&amp;url=http%3A%2F%2Fbbs.51talk.com%2Fforum%2Fdetail%2F5035.html" target="_blank">51Talk四周年感恩季</a> 
+       <!--a href="discuss_detail.html?2747" target="_blank">我的51talk学习经验谈</a--> 
+      </div> 
+     </div> 
+     <!-- 我要评级 --> 
+     <div class="us-box"> 
+      <div class="u-caption"> 
+       <h4 class="title">我要评级</h4> 
+      </div> 
+      <div class="us-pic"> 
+       <a href="http://bbs.51talk.com/user/ad_click?id=2&amp;url=http%3A%2F%2Fwww.51talk.com%2Ftesting%2Findex%2F%3Ftype%3Dlogin" target="_blank"> <img title="水平测试" src="/static/images/144308788522532_thumb.jpg" width="200" height="138" style="border:0px;" /> </a> 
+      </div> 
+     </div> 
+     <!-- us-box end --> 
+     <!--div class="us-box-em">
+	<a href="#" class="login-side-a"></a>
+	<a href="#" class="login-side-b"></a>
+</div--> 
+     <!-- us-box-em end --> 
+    </div> 
+    <!-- sidebar end --> 
+   </div> 
+  </div> 
+  <!-- main end -->  
+  <script type="text/javascript" src="/static/js/jquery-1.8.2.min.js"></script> 
+  <script>
+    $(".pra-tit").on("click", function () {
+        var great_icon = $(this).find(".pra-meta");
+        var forum_id = $(this).attr("data-forum_id");
+        var great_num = parseInt($(this).find(".pra-em").html());
+        var great_val = $(this).find(".pra-em");
+        if (great_icon.hasClass("add-icon-pra")) {
+            //取消点赞
+            var ajaxurl = "/ajax/cancelPraise";
+            var num = great_num - 1;
+        } else {
+            var ajaxurl = "/ajax/praiseLog";
+            var num = great_num + 1;
+        }
+        $.ajax({
+            type: "POST",
+            url: ajaxurl,
+            dataType: "json",
+            data: {forum_id: forum_id, type: 1},
+            success: function (data) {
+                if (data.status==1) {
+                    if (great_icon.hasClass("add-icon-pra")) {
+                        great_icon.removeClass("add-icon-pra");
+                    }else{
+                        great_icon.addClass("add-icon-pra");
+                    }
+                    great_val.html(num);
+                }else if(data.status==2){
+                    $.alert(data.info, function () {
+                        location.href = "/forum/";
+                    });
+                } else {
+                    $.alert(data.info, function () {
+                        if (data.data) {
+                            location.href = data.data;
+                        }
+                    });
+                }
+            }
+        });
+    });
+</script> 
+  <div class="footer"> 
+{% include "foot.html" %}
+  </div> 
+  <div id="u-gotop" style="display:block;"> 
+   <a href="javascript:;" title="回到顶部">回到顶部</a> 
+  </div> 
+  <!-- footer end --> {% include "js_include.html" %}
+<!--   <script type="text/javascript" src="/static/js/sea.min.js" id="seajsnode"></script> 
+  <script type="text/javascript" src="/static/js/vendor.js" id="seajsnode"></script>  -->
+  <!--script src="http://static2.51talk.com/static/js/sea.min.js?v=1432205604748" id='seajsnode'></script>
+<script src="/static/js/vendor.js?v=1432205604748" id='seajsnode'></script-->  
+  <img style="display:none;" src="/static/images/a.gif?v=3ce46e5284b8e150a9614ee9ff8e29e4&amp;site=3&amp;type=1&amp;uuid=fc30355894446a101b0b95e6819f06bb&amp;uid=U2843762138&amp;ref=http%3A%2F%2Fbbs.51talk.com%2Fopenclass%2Fdetail%2Fnew%2F2998.html" border="0" alt="" /> 
+ </body>
+</html>

@@ -16,6 +16,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from django.conf.urls import patterns
 from codeshop import views#,actions
+from codeshop import action_request#,actions
 #from django.conf import settings
 
 
@@ -32,7 +33,8 @@ urlpatterns = [
 	url(r'^download/$', views.download, name='download'),
 	url(r'^test/$', views.test, name='test'),
 	url(r'^test_question/$', views.test_question, name='test_question'),
-	url(r'^user_regist/$', views.user_regist, name='user_regist'),
+	url(r'^user_login/$', views.user_login, name='user_login'),
+	url(r'^user_regist/$', action_request.user_regist, name='user_regist'),
 ]
 # urlpatterns += patterns('',
 #      url(r'^codeshop/',include('codeshop.urls')),

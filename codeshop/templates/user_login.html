@@ -59,16 +59,30 @@
                             <label class="focus valid"></label>
                         </div>
                     </div>
+
                     <div class="item col-xs-12">
-                        <span class="intelligent-label f-fl"><b class="ftx04">*</b>手机号：</span>    
+                        <span class="intelligent-label f-fl"><b class="ftx04"></b>手机号：</span>    
                         <div class="f-fl item-ifo">
-                            <input type="text" class="txt03 f-r3 required" keycodes="tel" tabindex="2" data-valid="isNonEmpty||isPhone" data-error="手机号码不能为空||手机号码格式不正确" maxlength="11" id="phone" /> 
+                            <input type="text" class="txt03 f-r3" keycodes="tel" tabindex="2" data-valid="isNonEmpty||isPhone" data-error="手机号码不能为空||手机号码格式不正确" maxlength="11" id="phone" /> 
                             <span class="ie8 icon-close close hide"></span>                           
                             <label class="icon-sucessfill blank hide"></label>
                             <label class="focus">请填写11位有效的手机号码</label>
                             <label class="focus valid"></label>
                         </div>
                     </div>
+
+                    <div class="item col-xs-12">
+                        <span class="intelligent-label f-fl"><b class="ftx04">*</b>邮箱：</span>    
+                        <div class="f-fl item-ifo">
+                            <input type="text" class="txt03 f-r3 required" keycodes="tel" tabindex="2" data-valid="isNonEmpty||isEmail" data-error="邮箱不能为空||邮箱格式不正确" maxlength="100" id="email" /> 
+                            <span class="ie8 icon-close close hide"></span>                           
+                            <label class="icon-sucessfill blank hide"></label>
+                            <label class="focus">请填写有效的邮箱</label>
+                            <label class="focus valid"></label>
+                        </div>
+                    </div>
+
+
                     <div class="item col-xs-12">
                         <span class="intelligent-label f-fl"><b class="ftx04">*</b>密码：</span>    
                         <div class="f-fl item-ifo">
@@ -124,12 +138,16 @@
                     </div> 
                 </div>
                 <div class="part2" style="display:none">
-                  <div class="alert alert-info" style="width:700px">短信已发送至您手机，请输入短信中的验证码，确保您的手机号真实有效。</div>                    
+                  <div class="alert alert-info" style="width:700px">短信已发送至您手机或者邮箱，请输入收到的验证码，确保您的手机号或者邮箱真实有效。</div>                    
                     <div class="item col-xs-12 f-mb10" style="height:auto">
                         <span class="intelligent-label f-fl">手机号：</span>    
                         <div class="f-fl item-ifo c-blue">
                             18280011710
                         </div>
+                         <span class="intelligent-label f-fl">邮箱：</span>    
+                        <div class="f-fl item-ifo c-blue">
+                           564958573@qq.com
+                        </div>                       
                     </div>
                     <div class="item col-xs-12">
                         <span class="intelligent-label f-fl"><b class="ftx04">*</b>验证码：</span>    
@@ -139,16 +157,15 @@
                             <span class="btn btn-gray f-r3 f-ml5 f-size13" id="verifyYz" style="width:97px;">发送验证码</span>
                             <span class="ie8 icon-close close hide" style="right:130px"></span>
                             <label class="icon-sucessfill blank hide"></label>
-                            <label class="focus"><span>请查收手机短信，并填写短信中的验证码（此验证码3分钟内有效）</span></label>   
+                            <label class="focus"><span>请查收邮箱，并填写验证码（此验证码3分钟内有效）</span></label>   
                             <label class="focus valid"></label>                        
                         </div>
                     </div>
                     <div class="item col-xs-12">
-                        <span class="intelligent-label f-fl" style='margin-top: 20px;color:#ccc;'>返回注册</span>    
+                        <span class="intelligent-label f-fl" style='margin-top: 20px;color:#ccc;'><a href='javascript:;' id="btn_pre">返回注册</a></span>    
                         <div class="f-fl item-ifo">
                            <a href="javascript:;" class="btn btn-blue f-r3" id="btn_part2">注册</a>                         
-                        </div>
-                        <span class="intelligent-label f-fl"  style='margin-top: 20px;color:#ccc;margin-left: 30px;text-align: left;'>跳过?</span>    
+                        </div>   
                     </div> 
                 </div>
                 <div class="part3" style="display:none">
@@ -221,7 +238,6 @@ $(function(){
   //第一页的确定按钮
   $("#btn_part1").click(function(){           
     if(!verifyCheck._click()) return;
-    $.post()
     $(".part1").hide();
     $(".part2").show();
     $(".step li").eq(1).addClass("on");
@@ -232,40 +248,50 @@ $(function(){
   //   $(".part2").hide();
   //   $(".part3").show(); 
   // }); 
+   //第三页的返回
+  $("#btn_pre").click(function(){
+    $(".part1").show();
+    $(".part2").hide();
+    $(".step li").eq(0).addClass("on");
+    $(".step li").eq(1).removeClass("on");
+  });
   //第三页的确定按钮
   $("#btn_part2").click(function(){     
     if(!verifyCheck._click()) return;
-
-
-    user=$('#adminNo').val()
-    password=$('#password').val()
-    phone=$('#phone').val()
-    p_data={user_str=user,password_str=password,phone_str=phone}
+    user=$('#adminNo').val();
+    password=$('#password').val();
+    phone=$('#phone').val();
+    p_data={'user_str':user,'password_str':password,'phone_str':phone};
  // 使用post提交
      $.post("/user_regist/",p_data,function(data){
       // 提交成功后的操作，data为返回参数
-      alert(data);
-     });
+      
+      if(data['valid']==1){
 
+        $(".part3").hide();
+        $(".part2").hide();
+        $("#reg_success_tip").html("恭喜<span style='color:red'>"+$("#adminNo").val()+"</span>，您已注册成功，现在开始您的新征程吧！")
+        $(".part4").show();
+        $(".step li").eq(2).addClass("on");
+         
+        countdown({
+          maxTime:30,
+          ing:function(c){
+            $("#times").text(c);
+          },
+          after:function(){
+            window.location.href="/";   
+          }
+        });   
 
-
-
-    $(".part3").hide();
-    $(".part2").hide();
-    $("#reg_success_tip").html("恭喜<span style='color:red'>"+$("#adminNo").val()+"</span>，您已注册成功，现在开始您的新征程吧！")
-    $(".part4").show();
-    $(".step li").eq(2).addClass("on");
-     
-    countdown({
-      maxTime:10,
-      ing:function(c){
-        $("#times").text(c);
-      },
-      after:function(){
-        window.location.href="/";   
+      }else{
+        alert("注册失败了："+data.error);
+        return;
       }
-    });   
+
+     },"json");
   }); 
+
 });
 function showoutc(){$(".m-sPopBg,.m-sPopCon").show();}
 function closeClause(){

@@ -14,17 +14,20 @@ print(sys.path)
 #auto_increment
 #@transaction.atomic
 def custom_sql(sql):
-    #sql=sql.decode('utf8')
-    #cursor = connection.cursor(cursorclass = MySQLdb.cursors.DictCursor)
-    cursor = connection.cursor()
-    #print sql
-    cursor.execute(sql)
-    #cursor.execute("SELECT foo FROM bar WHERE baz = %s", [self.baz])
-    #data = cursor.fetchall()
-    columns = [d[0] for d in cursor.description]
-    #list_data=[[item for item in row]  for row in cursor.fetchall()]
-    data = [dict(zip(columns, row))  for row in cursor.fetchall()]
-    #print(data)
+    try:
+        #sql=sql.decode('utf8')
+        #cursor = connection.cursor(cursorclass = MySQLdb.cursors.DictCursor)
+        cursor = connection.cursor()
+        #print sql
+        cursor.execute(sql)
+        #cursor.execute("SELECT foo FROM bar WHERE baz = %s", [self.baz])
+        #data = cursor.fetchall()
+        columns = [d[0] for d in cursor.description]
+        #list_data=[[item for item in row]  for row in cursor.fetchall()]
+        data = [dict(zip(columns, row))  for row in cursor.fetchall()]
+        #print(data)
+    except Exception,e:
+        print(e.message)
     return data
 
 
@@ -52,9 +55,12 @@ def single_column_sql(sql):
 
 #execute dml
 def excute_sql(sql):
-    cursor = connection.cursor()
-    n=cursor.execute(sql)
-    transaction.commit()
+    try:
+        cursor = connection.cursor()
+        n=cursor.execute(sql)
+        transaction.commit()
+    except Exception,e:
+        print(e.message)
     return n
 
 #insert

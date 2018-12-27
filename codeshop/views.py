@@ -6,7 +6,7 @@ from django.template.loader import render_to_string
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from common_db import *
-from action_request import *
+#from action_request import user_regist
 
 
 

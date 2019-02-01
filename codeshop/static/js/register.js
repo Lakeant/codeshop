@@ -64,6 +64,11 @@
 				c = c || " ";
 				if (a !== $("#" + b).val()) return c
 			},
+			isCodeRepeat: function(a,b, c) {
+				c = c || " ";
+				var key=$("#"+b).text();
+				if (a.toLowerCase() !== window[key]) return c
+			},
 			between: function(a, b, c) {
 				c = c || " ";
 				var d = parseInt(b.split('-')[0]);

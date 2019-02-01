@@ -23,6 +23,7 @@ from codeshop import action_request#,actions
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', views.index, name='index'),
+	url(r'index^$', views.index, name='index'),
     url(r'^activity/$', views.activity, name='activity'),
 	url(r'^activity_detail/$', views.activity_detail, name='activity_detail$'),
 	url(r'^classes/$', views.classes, name='classes$'),
@@ -33,8 +34,14 @@ urlpatterns = [
 	url(r'^download/$', views.download, name='download'),
 	url(r'^test/$', views.test, name='test'),
 	url(r'^test_question/$', views.test_question, name='test_question'),
-	url(r'^user_login/$', views.user_login, name='user_login'),
+	url(r'^regist/$', views.regist, name='regist'),
+	url(r'^login/$', views.login, name='login'),
+
+	url(r'^user_login/$', action_request.user_login, name='user_login'),
+	url(r'^user_login_out/$', action_request.user_login_out, name='user_login_out'),
+
 	url(r'^user_regist/$', action_request.user_regist, name='user_regist'),
+	url(r'^mail_code/$', action_request.mail_code, name='mail_code'),
 ]
 # urlpatterns += patterns('',
 #      url(r'^codeshop/',include('codeshop.urls')),

@@ -44,12 +44,25 @@
         <!-- </a> --> 
        </div> 
        <div class="drop jsMore"> 
-        <span class="drop-a" ></span> 
-        <ul class="drop-list jsUl" style="display:none;"> 
+        <!-- class="drop-a" -->
+        {% if user_name %}
+        <span>{{user_name}}</span> 
+
+         <ul class="drop-list jsUl" style="display:none;"> 
          <!-- 隐藏 --> 
          <li><a href="/user_login/">我的主页</a></li> 
          <li><a href="/user/info">帐号设置</a></li> 
-         <li><a href="/user/logout" class="last">退出</a></li> 
+         <li><a href="/user_login_out/" class="last">退出</a></li> 
+        {% else %}
+        <span  class="drop-a" style="color:blue"></span> 
+        <ul class="drop-list jsUl" style="display:none;"> 
+         <!-- 隐藏 --> 
+         <li><a href="/user_login/">账号登陆</a></li> 
+         <li><a href="/user/info">账号注册</a></li> 
+          <li><a href="/user/info">我就看看</a></li> 
+        {% endif %}
+
+
         </ul> 
        </div> 
       </div> 

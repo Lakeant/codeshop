@@ -55,6 +55,17 @@ $(document).ready(function () {
 	// 	});
 
 
+$(".tag_a").hover(
+	function(){
+		var i=Math.floor(Math.random()*7+1);
+		var colors=new Array("#FF0000","#FF7F00","#FFFF00","#00FF00","#00FFFF","#0000FF","#8B00FF");
+		var color_choose=colors[i];
+		$(this).css("background-color",color_choose);
+	},
+	function(){
+		$(this).css("background-color","#fff");
+	}
+	);
 
 
 
